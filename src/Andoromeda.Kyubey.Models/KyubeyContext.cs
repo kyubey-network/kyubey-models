@@ -115,15 +115,9 @@ namespace Andoromeda.Kyubey.Models
 
         public DbSet<Token> Tokens { get; set; }
 
-        public DbSet<TokenHatcherPraise> TokenHatcherPraises { get; set; }
-
         public DbSet<TokenComment> TokenComments { get; set; }
 
         public DbSet<TokenCommentPraise> TokenCommentPraises { get; set; }
-
-        //public DbSet<Otc> Otcs { get; set; }
-
-        //public DbSet<Bancor> Bancors { get; set; }
 
         public DbSet<AlertRule> AlertRules { get; set; }
 
@@ -164,17 +158,6 @@ namespace Andoromeda.Kyubey.Models
             {
                 e.HasIndex(x => x.Priority);
                 e.HasIndex(x => x.Name).ForMySqlIsFullText();
-            });
-
-
-            builder.Entity<Bancor>(e =>
-            {
-                e.HasIndex(x => x.Status);
-            });
-
-            builder.Entity<Otc>(e =>
-            {
-                e.HasIndex(x => x.Status);
             });
 
             builder.Entity<MatchReceipt>(e =>

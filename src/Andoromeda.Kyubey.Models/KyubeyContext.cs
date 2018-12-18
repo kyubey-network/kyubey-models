@@ -164,6 +164,7 @@ namespace Andoromeda.Kyubey.Models
             {
                 e.HasIndex(x => x.Time);
                 e.HasIndex(x => x.TokenId);
+                e.HasIndex(x => x.IsSellMatch);
             });
 
             builder.Entity<DexBuyOrder>(e =>

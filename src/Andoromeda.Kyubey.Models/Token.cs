@@ -44,11 +44,11 @@ namespace Andoromeda.Kyubey.Models
 
         public string NewDexId { get; set; }
 
-        public double NewDexAsk { get; set; }
+        public double? NewDexAsk { get; set; }
 
-        public double NewDexBid { get; set; }
+        public double? NewDexBid { get; set; }
 
-        public double WhaleExPrice { get; set; }
+        public double? WhaleExPrice { get; set; }
 
         [MaxLength(255)]
         public string Alert { get; set; }

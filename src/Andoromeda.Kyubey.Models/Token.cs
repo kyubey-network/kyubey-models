@@ -42,6 +42,12 @@ namespace Andoromeda.Kyubey.Models
 
         public virtual Curve Curve { get; set; }
 
+        public string NewDexId { get; set; }
+
+        public double NewDexAsk { get; set; }
+
+        public double NewDexBid { get; set; }
+
         [MaxLength(255)]
         public string Alert { get; set; }
 

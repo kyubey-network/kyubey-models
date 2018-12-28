@@ -48,6 +48,8 @@ namespace Andoromeda.Kyubey.Models
 
         public double NewDexBid { get; set; }
 
+        public double WhaleExPrice { get; set; }
+
         [MaxLength(255)]
         public string Alert { get; set; }
 

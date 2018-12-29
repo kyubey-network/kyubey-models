@@ -139,6 +139,8 @@ namespace Andoromeda.Kyubey.Models
 
         public DbSet<RaiseLog> RaiseLogs { get; set; }
 
+        public DbSet<AlertAccount> AlertAccounts { get; set; }
+
         protected override void OnModelCreating(ModelBuilder builder)
         {
             base.OnModelCreating(builder);
@@ -198,6 +200,11 @@ namespace Andoromeda.Kyubey.Models
             {
                 e.HasIndex(x => x.TokenId);
                 e.HasIndex(x => x.Timestamp);
+            });
+
+            builder.Entity<AlertAccount>(e => {
+                e.HasIndex(x => x.Begin);
+                e.HasIndex(x => x.Expire);
             });
         }
     }

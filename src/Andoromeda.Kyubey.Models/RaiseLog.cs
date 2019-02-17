@@ -16,5 +16,7 @@ namespace Andoromeda.Kyubey.Models
         public double Amount { get; set; }
 
         public DateTime Timestamp { get; set; }
+
+        public int Seq { get; set; }
     }
 }

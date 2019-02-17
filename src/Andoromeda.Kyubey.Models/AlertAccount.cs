@@ -1,3 +1,5 @@
+using System;
+
 namespace Andoromeda.Kyubey.Models
 {
     public class AlertAccount
